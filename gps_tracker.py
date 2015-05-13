@@ -18,27 +18,27 @@ import struct
 import sys
 import time
 
-database_file = '/home/pi/programs/gps_tracker/gps_coords_database.sqlite'
+database_file = 'gps_coords_database.sqlite'
 
-aesKey = '\x89\x21\xfb\xc8\x46\x55\xa8\xa1\x84\x2c\x57\x8d\xea\x56\x89\x77\xed\x15\xec\x57\x02\xc1\xb0\x7f\x51\x18\x77\x32\x1b\x9e\x75\x5a'
+aesKey = '0123456789abdef0123456789abdef'
 
 shaKeys = [
-	'IJkbkcdBGdZ66EGPboaz',
-	't4UET4lIzCnWsLDS3Bmr',
-	'n733L0kPTGHoqZT1Oi6R',
-	'jjrmFq2xOON3dRvyZKBF',
-	'KScXxUuGz77oMmOpujDX',
-	'12345678',
-	'23456789',
-	'34567890',
-	'1234567',
-	'2345678',
-	'abcdefg',
-	'a1804792837p798098e7',
-	'cccccccccccccccccccc',
-	'dddddddddddddddddddd',
-	'eeeeeeeeeeeeeeeeeeee',
-	'ffffffffffffffffffff'
+	'0123456789abcdef',
+	'123456789abcdef0',
+	'23456789abcdef01',
+	'3456789abcdef012',
+	'456789abcdef0123',
+	'56789abcdef01234',
+	'6789abcdef012345',
+	'789abcdef0123456',
+	'89abcdef01234567',
+	'9abcdef012345678',
+	'abcdef0123456789',
+	'bcdef0123456789a',
+	'cdef0123456789ab',
+	'def0123456789abc',
+	'ef0123456789abcd',
+	'f0123456789abcde'
 ]
 
 hexdigits = {
